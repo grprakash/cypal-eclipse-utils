@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.3"?>
+<plugin>
+   <extension
+         point="org.eclipse.pde.ui.newExtension">
+      <wizard
+            category="templates"
+            icon="icons/newex_wiz.gif"
+            id="in.cypal.tools.eclipse.utils.newExtension.commonNavigator"
+            name="Common Navigator"
+            template="in.cypal.tools.eclipse.utils.template.commonNavigator">
+         <description>
+            Creates a Common Navigator with Workspace resources as its contents
+         </description>
+      </wizard>
+   </extension>
+   <extension
+         point="org.eclipse.pde.ui.templates">
+      <template
+            class="in.cypal.tools.eclipse.utils.CommonNavigatorTemplate"
+            contributingId="org.eclipse.ui.navigator.viewer"
+            id="in.cypal.tools.eclipse.utils.template.commonNavigator"
+            name="Common Navigator">
+      </template>
+   </extension>
+
+</plugin>
